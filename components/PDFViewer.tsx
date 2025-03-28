@@ -27,7 +27,7 @@ export const PDFViewer = ({ pdfFile, onAnnotate }: PDFViewerProps) => {
   >(null);
   const [color, setColor] = useState<string>("#ffff00");
   const [annotations, setAnnotations] = useState<Annotation[]>([]);
-  console.log(annotations);
+  console.log(loading);
 
   // Handle mouse down to start annotation
   const handleMouseDown = (
