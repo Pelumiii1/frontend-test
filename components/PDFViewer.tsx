@@ -7,7 +7,6 @@ import { useState } from "react";
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import { Annotation } from "@/types";
-import SignatureTool from "./SignatureTool";
 import Image from "next/image";
 import ExportPDF from "./ExportPDF";
 
@@ -235,7 +234,7 @@ export const PDFViewer = ({ pdfFile, onAnnotate }: PDFViewerProps) => {
                         />
                       )}
                       {ann.type === "signature" && !ann.signatureData && (
-                        <SignatureTool />
+                        <div></div>
                       )}
                     </div>
                   ))}
